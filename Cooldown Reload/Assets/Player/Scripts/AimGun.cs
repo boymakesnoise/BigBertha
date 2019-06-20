@@ -5,7 +5,11 @@ using UnityEngine;
 public class AimGun : MonoBehaviour
 {
     private bool facingRight = true;
-    private float angles;
+    private SpriteRenderer mySpriteRenderer;
+
+    private void Awake() {
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     void Update()
     {
@@ -17,29 +21,14 @@ public class AimGun : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, newRot, Time.deltaTime * 5);
         }
 
-        //angles = transform.eulerAngles.z;
-        //Flip(angles);
-
         if (transform.eulerAngles.z > 90 && transform.eulerAngles.z < 270 && facingRight) {
-            facingRight = false;
-            Vector3 theScale = transform.localScale;
-            theScale.y *= -1;
-            transform.localScale = theScale;
+            mySpriteRenderer.flipY = true;
         }
         if (transform.eulerAngles.z <= 90 || transform.eulerAngles.z >= 270) {
-            if (!facingRight) {
-                facingRight = true;
-                Vector3 theScale = transform.localScale;
-                theScale.y *= -1;
-                transform.localScale = theScale;
-            }
+            mySpriteRenderer.flipY = false;
         }
-        print(facingRight);
+
+        
     }
 
-    //private void Flip(float angles) {
-    //    if (angles > 90 && angles < 270 && facingRight) {
-    //        facingRight = !facingRight;
-    //    }
-    //}
 }
