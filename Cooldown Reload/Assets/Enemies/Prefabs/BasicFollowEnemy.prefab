@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ed6d78a4ee293d47966779da02f505d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  sprite: {fileID: 5351763810400568418}
+  moveSpeed: 3
   maxDist: 10
   minDist: 1
 --- !u!61 &1092892743592212634
@@ -145,7 +146,7 @@ SpriteRenderer:
   m_Sprite: {fileID: 7772023239941060108, guid: 6a32cd77bb3865c448525d299e3a34ba,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.22, y: 0.3}

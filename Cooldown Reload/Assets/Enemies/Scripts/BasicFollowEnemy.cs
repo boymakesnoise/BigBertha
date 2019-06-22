@@ -6,6 +6,8 @@ public class BasicFollowEnemy : MonoBehaviour
 {
 
     private Transform target;
+    public SpriteRenderer sprite;
+    public float health = 1;
 
     public int moveSpeed = 4;
     public int maxDist = 10;
@@ -18,8 +20,16 @@ public class BasicFollowEnemy : MonoBehaviour
 
     private void Update()
     {
-        //transform.right = target.position - transform.position;
         transform.position = Vector2.MoveTowards(transform.position, target.transform.position, moveSpeed * Time.deltaTime);
+
+        if (target.position.x > transform.position.x)
+        {
+            sprite.flipX = true;
+        }
+        else if (target.position.x < transform.position.x)
+        {
+            sprite.flipX = false;
+        }
     }
 
 }

@@ -46,11 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f400f0d3992c5f4da67813bde00796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1805871174244479396, guid: 4691568851434104e9da8a23852ddaf9, type: 3}
+  bullet: {fileID: 4281222425861140503, guid: 4691568851434104e9da8a23852ddaf9, type: 3}
   firingPoint: {fileID: 4364661154562686796}
   nextFire: 2
   firingRate: 5
-  moveSpeed: 4
+  moveSpeed: 1
 --- !u!61 &2543096444162694260
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -100,13 +100,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4364661154562686797}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.06, y: -0.11, z: 0.98}
+  m_LocalRotation: {x: -0, y: -0, z: 0.70710677, w: 0.7071068}
+  m_LocalPosition: {x: 0.04, y: 0.56, z: 0.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4364661152767841526}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.00001}
 --- !u!1 &6015646634307351913
 GameObject:
   m_ObjectHideFlags: 0
