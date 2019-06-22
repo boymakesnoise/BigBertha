@@ -7,10 +7,13 @@ public class PlayerMovement : MonoBehaviour
     public float xVelAdj;
     public float yVelAdj;
     public float speed;
+    public Animator animator;
 
     private void Update() {
         xVelAdj = Input.GetAxisRaw("xMove");
         yVelAdj = Input.GetAxisRaw("yMove");
+
+        animator.SetFloat("Speed", Mathf.Abs(xVelAdj) + Mathf.Abs(yVelAdj));
     }
 
     private void FixedUpdate() {
