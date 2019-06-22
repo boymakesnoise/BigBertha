@@ -8,17 +8,17 @@ public class ReloadTimer : MonoBehaviour
     [HideInInspector] public float currentReloadTime;
     public GameObject reloadMeter;
     private Vector3 origPos;
-    private float prutt;
+    private float incrementSize;
 
     private void Start() {
         origPos = reloadMeter.transform.position;
-        prutt = -747f / reloadTime;
+        incrementSize = -747f / reloadTime;
     }
 
     private void Update() {
         if (currentReloadTime > 0) {
             currentReloadTime -= Time.deltaTime;
-            reloadMeter.transform.position = origPos + new Vector3(currentReloadTime * prutt, 0, 0);
+            reloadMeter.transform.position = origPos + new Vector3(currentReloadTime * incrementSize, 0, 0);
         }
     }
 }
