@@ -6,6 +6,11 @@ public class Firing : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    private ReloadTimer reloadTime;
+
+    private void Start() {
+        reloadTime = GetComponent<ReloadTimer>();
+    }
 
     private void Update() {
         if (Input.GetButtonDown("Fire1")) {
@@ -14,6 +19,9 @@ public class Firing : MonoBehaviour
     }
 
     private void Shoot() {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        if (reloadTime.currentReloadTime <= 0f) {
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            reloadTime.currentReloadTime = reloadTime.reloadTime;
+        }
     }
 }
