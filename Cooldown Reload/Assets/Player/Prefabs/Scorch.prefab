@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3047213408145793934}
   - component: {fileID: 256993219000768997}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: Scorch
   m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,7 +96,7 @@ BoxCollider2D:
   m_Offset: {x: 9.55, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0.5}
     oldSize: {x: 19.2, y: 2}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
