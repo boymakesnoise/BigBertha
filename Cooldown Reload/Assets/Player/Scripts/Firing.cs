@@ -8,6 +8,7 @@ public class Firing : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject scorchPrefab;
     private ReloadTimer reloadTime;
+    public GameObject siktet;
 
     private void Start() {
         reloadTime = GetComponent<ReloadTimer>();
@@ -25,6 +26,7 @@ public class Firing : MonoBehaviour
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             
             reloadTime.currentReloadTime = reloadTime.reloadTime;
+            siktet.SetActive(false);
         }
     }
 }

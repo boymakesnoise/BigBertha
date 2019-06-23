@@ -12,7 +12,6 @@ public class AimGun : MonoBehaviour
 
     private void Awake() {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
-
         playerCharSR = playerChar.GetComponent<SpriteRenderer>();
     }
 
