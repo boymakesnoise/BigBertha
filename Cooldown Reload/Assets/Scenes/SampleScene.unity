@@ -120,85 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &180744664
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 180744665}
-  - component: {fileID: 180744666}
-  m_Layer: 0
-  m_Name: Sikte
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &180744665
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180744664}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.25, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1585867028}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &180744666
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180744664}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4ccd2b46b2cb75840aadfdcb48d7b6e4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 19.2, y: 0.07}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &258729604
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,12 +599,6 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1585867028 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1010977339277352864, guid: bfa833b954c7e9f4b8347179e681b582,
-    type: 3}
-  m_PrefabInstance: {fileID: 1010977340513425627}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1876178979
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,26 +794,12 @@ PrefabInstance:
       propertyPath: reloadMeter
       value: 
       objectReference: {fileID: 1974663491}
-    - target: {fileID: 1010977340223941724, guid: bfa833b954c7e9f4b8347179e681b582,
+    - target: {fileID: 1010977340606799899, guid: bfa833b954c7e9f4b8347179e681b582,
         type: 3}
-      propertyPath: siktet
+      propertyPath: skottet
       value: 
-      objectReference: {fileID: 180744664}
-    - target: {fileID: 1010977339875988690, guid: bfa833b954c7e9f4b8347179e681b582,
+      objectReference: {fileID: 6532501931014968181, guid: 32b30fcc65d448640964ffd601c9eb45,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1010977340223941726, guid: bfa833b954c7e9f4b8347179e681b582,
-        type: 3}
-      propertyPath: siktet
-      value: 
-      objectReference: {fileID: 180744664}
-    - target: {fileID: 1010977340223941725, guid: bfa833b954c7e9f4b8347179e681b582,
-        type: 3}
-      propertyPath: siktet
-      value: 
-      objectReference: {fileID: 180744664}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfa833b954c7e9f4b8347179e681b582, type: 3}
 --- !u!1001 &2880840720940128142
@@ -1017,26 +918,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2880840721115078637, guid: 31cd61bf2f8b52b458ef32d934254030,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 12.179932
-      objectReference: {fileID: 0}
-    - target: {fileID: 2880840721115078637, guid: 31cd61bf2f8b52b458ef32d934254030,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -12.699951
-      objectReference: {fileID: 0}
-    - target: {fileID: 2880840720974284332, guid: 31cd61bf2f8b52b458ef32d934254030,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 13.800049
-      objectReference: {fileID: 0}
-    - target: {fileID: 2880840720974284332, guid: 31cd61bf2f8b52b458ef32d934254030,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -139.03998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31cd61bf2f8b52b458ef32d934254030, type: 3}

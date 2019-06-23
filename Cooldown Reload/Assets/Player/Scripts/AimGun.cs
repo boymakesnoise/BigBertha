@@ -6,9 +6,9 @@ public class AimGun : MonoBehaviour
 {
     private bool facingRight = true;
     private SpriteRenderer mySpriteRenderer;
-
     public GameObject playerChar;
     private SpriteRenderer playerCharSR;
+    private GameObject bullet;
 
     private void Awake() {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
@@ -17,6 +17,17 @@ public class AimGun : MonoBehaviour
 
     void Update()
     {
+        bullet = GameObject.FindGameObjectWithTag("skott");
+        TakeInputAndRotate();
+    }
+
+    private void TakeInputAndRotate() {
+
+        if (bullet != null) {
+            
+            return;
+        }
+
         var h = Input.GetAxis("xAim");
         var v = Input.GetAxis("yAim");
         if (Mathf.Abs(h) > 0.05 || Mathf.Abs(v) > 0.05) {
@@ -33,8 +44,6 @@ public class AimGun : MonoBehaviour
             mySpriteRenderer.flipY = false;
             playerCharSR.flipX = false;
         }
-
-        
     }
 
 }

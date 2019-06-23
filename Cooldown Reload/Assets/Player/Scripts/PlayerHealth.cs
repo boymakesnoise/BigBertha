@@ -21,12 +21,12 @@ public class PlayerHealth : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.tag == "bullet") {
+        if (other.gameObject.tag == "scorch") {
             takingDamage = true;
         }
     }
     void OnTriggerExit2D(Collider2D other) {
-        if (other.gameObject.tag == "bullet") {
+        if (other.gameObject.tag == "scorch") {
             takingDamage = false;
         }
     }

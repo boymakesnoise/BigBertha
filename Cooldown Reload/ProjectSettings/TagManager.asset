@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - bullet
+  - scorch
+  - skott
   layers:
   - Default
   - TransparentFX
