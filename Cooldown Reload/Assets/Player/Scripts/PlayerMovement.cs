@@ -10,6 +10,13 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public GameObject skottet;
     private GameObject bullet;
+    private GameManager GM;
+
+    private void Start() {
+        GM = FindObjectOfType<GameManager>();
+    }
+
+    
 
     private void Update() {
         
@@ -19,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        if (bullet != null) {
+        if (bullet != null || GM.gameHasEnded) {
             GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
             return;
         }
@@ -28,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void CheckInput() {
-        if (bullet != null) {
+        if (bullet != null || GM.gameHasEnded) {
             animator.SetFloat("Speed", 0);
             return;
         }

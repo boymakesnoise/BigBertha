@@ -18,6 +18,9 @@ public class PlayerHealth : MonoBehaviour
 
         HPMeter.fillAmount = currentHP / maxHP;
 
+        if (currentHP <= 0) {
+            FindObjectOfType<GameManager>().GameOver();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other) {

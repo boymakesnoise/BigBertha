@@ -9,10 +9,12 @@ public class AimGun : MonoBehaviour
     public GameObject playerChar;
     private SpriteRenderer playerCharSR;
     private GameObject bullet;
+    private GameManager GM;
 
     private void Awake() {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         playerCharSR = playerChar.GetComponent<SpriteRenderer>();
+        GM = FindObjectOfType<GameManager>();
     }
 
     void Update()
@@ -23,8 +25,7 @@ public class AimGun : MonoBehaviour
 
     private void TakeInputAndRotate() {
 
-        if (bullet != null) {
-            
+        if (bullet != null || GM.gameHasEnded) {
             return;
         }
 
