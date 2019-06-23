@@ -149,7 +149,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &130108263
 MonoBehaviour:
@@ -483,6 +483,56 @@ Transform:
   m_Father: {fileID: 1259236323}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &408150297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 408150299}
+  - component: {fileID: 408150298}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &408150298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408150297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dfaf223aff8c046badc16fbd3c526b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Plupp
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!4 &408150299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408150297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,7 +658,7 @@ Transform:
   m_Children:
   - {fileID: 519420032}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &692245293
 PrefabInstance:
@@ -660,7 +710,7 @@ PrefabInstance:
     - target: {fileID: 4364661152767841526, guid: 5ab3acad865eb4143bdccae96f9cbf73,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4364661152767841526, guid: 5ab3acad865eb4143bdccae96f9cbf73,
         type: 3}
@@ -729,7 +779,7 @@ PrefabInstance:
     - target: {fileID: 5898019421396004590, guid: 6f4dc91065079fd49bab4e09bdcaebcf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5898019421396004590, guid: 6f4dc91065079fd49bab4e09bdcaebcf,
         type: 3}
@@ -780,7 +830,7 @@ Transform:
   - {fileID: 263267527}
   - {fileID: 376441851}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1285289224 stripped
 MonoBehaviour:
@@ -962,7 +1012,7 @@ PrefabInstance:
     - target: {fileID: 1010977340606799973, guid: bfa833b954c7e9f4b8347179e681b582,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1010977340606799973, guid: bfa833b954c7e9f4b8347179e681b582,
         type: 3}
@@ -994,6 +1044,11 @@ PrefabInstance:
       propertyPath: cameraShake
       value: 
       objectReference: {fileID: 519420030}
+    - target: {fileID: 1010977340223941725, guid: bfa833b954c7e9f4b8347179e681b582,
+        type: 3}
+      propertyPath: duration
+      value: 1.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfa833b954c7e9f4b8347179e681b582, type: 3}
 --- !u!1001 &2880840720940128142
@@ -1046,7 +1101,7 @@ PrefabInstance:
     - target: {fileID: 2880840719736211157, guid: 31cd61bf2f8b52b458ef32d934254030,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2880840719736211157, guid: 31cd61bf2f8b52b458ef32d934254030,
         type: 3}
