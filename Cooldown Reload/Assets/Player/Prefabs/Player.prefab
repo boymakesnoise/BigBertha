@@ -224,6 +224,9 @@ MonoBehaviour:
   scorchPrefab: {fileID: 3047213408145793935, guid: 0c71a95c384748440b012321fa50c5b1,
     type: 3}
   siktet: {fileID: 180744664}
+  cameraShake: {fileID: 0}
+  duration: 0.75
+  magnitude: 0.4
 --- !u!114 &1010977340223941724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,6 +391,7 @@ MonoBehaviour:
   yVelAdj: 0
   speed: 4
   animator: {fileID: 4241255002254073148}
+  skottet: {fileID: 6532501931014968181, guid: 32b30fcc65d448640964ffd601c9eb45, type: 3}
 --- !u!114 &1010977340606799896
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,6 +9,9 @@ public class Firing : MonoBehaviour
     public GameObject scorchPrefab;
     private ReloadTimer reloadTime;
     public GameObject siktet;
+    public CameraShake cameraShake;
+    public float duration = .4f;
+    public float magnitude = .4f;
 
     private void Start() {
         reloadTime = GetComponent<ReloadTimer>();
@@ -27,6 +30,8 @@ public class Firing : MonoBehaviour
             
             reloadTime.currentReloadTime = reloadTime.reloadTime;
             siktet.SetActive(false);
+
+            StartCoroutine(cameraShake.Shake(duration, magnitude));
         }
     }
 }
