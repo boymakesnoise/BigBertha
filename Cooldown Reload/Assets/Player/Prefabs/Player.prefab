@@ -218,7 +218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1010977339277352864}
-  bulletPrefab: {fileID: 3047213408145793935, guid: 0c71a95c384748440b012321fa50c5b1,
+  bulletPrefab: {fileID: 6532501931014968181, guid: 32b30fcc65d448640964ffd601c9eb45,
+    type: 3}
+  scorchPrefab: {fileID: 3047213408145793935, guid: 0c71a95c384748440b012321fa50c5b1,
     type: 3}
 --- !u!114 &1010977340223941724
 MonoBehaviour:
@@ -232,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb271e35cea66ab4d88076c20cf31242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reloadTime: 13
+  reloadTime: 3
   currentReloadTime: 0
   reloadMeter: {fileID: 0}
 --- !u!1 &1010977340606799974

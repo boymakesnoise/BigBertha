@@ -6,6 +6,7 @@ public class Firing : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public GameObject scorchPrefab;
     private ReloadTimer reloadTime;
 
     private void Start() {
@@ -20,7 +21,9 @@ public class Firing : MonoBehaviour
 
     private void Shoot() {
         if (reloadTime.currentReloadTime <= 0f) {
+            Instantiate(scorchPrefab, firePoint.position, firePoint.rotation);
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            
             reloadTime.currentReloadTime = reloadTime.reloadTime;
         }
     }
