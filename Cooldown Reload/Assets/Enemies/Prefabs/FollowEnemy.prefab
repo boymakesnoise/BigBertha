@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8995407560119759438}
   - component: {fileID: 8995407560119759427}
+  - component: {fileID: 8995407560119759426}
   - component: {fileID: 8995407560119759424}
   - component: {fileID: 8995407560119759425}
-  - component: {fileID: 8995407560119759426}
   m_Layer: 0
   m_Name: FollowEnemy
   m_TagString: Untagged
@@ -63,6 +63,22 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
+--- !u!114 &8995407560119759426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8995407560119759429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6345541693a042f41b754f5d97238803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 300
+  nextWaypointDistance: 1
+  sprite: {fileID: 8995407560216473486}
 --- !u!58 &8995407560119759424
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -100,22 +116,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &8995407560119759426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8995407560119759429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6345541693a042f41b754f5d97238803, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 500
-  nextWaypointDistance: 1
-  sprite: {fileID: 8995407560216473486}
 --- !u!1 &8995407560216473473
 GameObject:
   m_ObjectHideFlags: 0
