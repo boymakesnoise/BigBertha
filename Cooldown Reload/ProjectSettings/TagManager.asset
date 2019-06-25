@@ -15,7 +15,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Obstacles
   - 
   - 
   - 
@@ -42,4 +42,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Y-Sorting
+    uniqueID: 2588401651
+    locked: 0
+  - name: Weapon effects
+    uniqueID: 3427985963
     locked: 0
