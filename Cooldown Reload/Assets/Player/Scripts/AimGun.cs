@@ -25,9 +25,7 @@ public class AimGun : MonoBehaviour
 
     private void TakeInputAndRotate() {
 
-        if (bullet != null || GM.gameHasEnded) {
-            return;
-        }
+        if (bullet != null || GM.gameHasEnded) {return;}
 
         var h = Input.GetAxis("xAim");
         var v = Input.GetAxis("yAim");
