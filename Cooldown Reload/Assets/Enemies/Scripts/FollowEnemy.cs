@@ -19,6 +19,8 @@ public class FollowEnemy : MonoBehaviour
     Seeker seeker;
     Rigidbody2D rb;
 
+    private int SpawnerID;
+    private GameObject objSpawn;
 
 
     void Start()
@@ -27,6 +29,8 @@ public class FollowEnemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         InvokeRepeating("UpdatePath", 0f, .5f);
+
+        objSpawn = (GameObject)GameObject.FindWithTag("Spawner");
     }
 
     void UpdatePath()
@@ -42,6 +46,19 @@ public class FollowEnemy : MonoBehaviour
             path = p;
             currentWaypoint = 0;
         }
+    }
+
+    // this gets called in the beginning when it is created by the spawner script
+    void setName(int sName)
+    {
+        SpawnerID = sName;
+    }
+
+    // Call this when you want to kill the enemy
+    void removeMe()
+    {
+        objSpawn.BroadcastMessage("killEnemy", SpawnerID);
+        Destroy(gameObject);
     }
 
 
