@@ -11,12 +11,13 @@ public class ReloadTimer : MonoBehaviour
     public GameObject siktet;
 
     private void Update() {
-        if (currentReloadTime > 0) {
+        if (currentReloadTime > 0 && Input.GetButton("Reload1")) {
             currentReloadTime -= Time.deltaTime;
-            reloadMeter.fillAmount = 1 - (currentReloadTime / reloadTime);
         }
-        else {
+        if (currentReloadTime <= 0) {
             siktet.SetActive(true);
         }
+
+        reloadMeter.fillAmount = 1 - (currentReloadTime / reloadTime);
     }
 }
