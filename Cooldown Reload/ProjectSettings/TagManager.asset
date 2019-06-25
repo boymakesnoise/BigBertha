@@ -6,6 +6,8 @@ TagManager:
   tags:
   - scorch
   - skott
+  - wall
+  - enemy
   layers:
   - Default
   - TransparentFX

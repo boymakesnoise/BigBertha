@@ -15,5 +15,12 @@ public class Skott : MonoBehaviour
         if (despawnTime <= 0) {
             Destroy(gameObject);
         }
+
+        //Collider[] hitColliders = Physics.OverlapSphere(transform.position, 2000);
+        //int i = 0;
+        //while (i < hitColliders.Length) {
+        //    hitColliders[i].SendMessage("Shot");
+        //    i++;
+        //}
     }
 }
