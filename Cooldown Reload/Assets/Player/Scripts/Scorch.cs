@@ -21,8 +21,9 @@ public class Scorch : MonoBehaviour {
         }
     }
 
+    // Paja väggar & döda fiender
     void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.tag == "wall") {
+        if (other.gameObject.tag == "wall" || other.gameObject.tag == "enemy") {
             Destroy(other.gameObject);
         }
     }
