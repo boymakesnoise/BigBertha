@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AimGun : MonoBehaviour
 {
-    private bool facingRight = true;
+    public bool facingRight = true;
     private SpriteRenderer mySpriteRenderer;
     public GameObject playerChar;
     private SpriteRenderer playerCharSR;
@@ -35,13 +35,16 @@ public class AimGun : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, newRot, Time.deltaTime * 5);
         }
 
-        if (transform.eulerAngles.z > 90 && transform.eulerAngles.z < 270 && facingRight) {
+        // Flippa vapnet & spelaren
+        if (transform.eulerAngles.z > 90 && transform.eulerAngles.z < 270) {
             mySpriteRenderer.flipY = true;
             playerCharSR.flipX = true;
+            facingRight = false;
         }
         if (transform.eulerAngles.z <= 90 || transform.eulerAngles.z >= 270) {
             mySpriteRenderer.flipY = false;
             playerCharSR.flipX = false;
+            facingRight = true;
         }
     }
 

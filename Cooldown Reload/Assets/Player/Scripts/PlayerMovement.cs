@@ -11,18 +11,22 @@ public class PlayerMovement : MonoBehaviour
     public GameObject skottet;
     private GameObject bullet;
     private GameManager GM;
+    private GameObject gun;
+    private AimGun aimGun;
 
     private void Start() {
         GM = FindObjectOfType<GameManager>();
+        gun = GameObject.FindWithTag("gun");
+        aimGun = gun.GetComponent<AimGun>();
     }
-
-    
 
     private void Update() {
         
         bullet = GameObject.FindGameObjectWithTag("skott");
 
         CheckInput();
+
+        print(aimGun.facingRight);
     }
 
     private void FixedUpdate() {
@@ -44,6 +48,22 @@ public class PlayerMovement : MonoBehaviour
         yVelAdj = Input.GetAxisRaw("yMove");
 
         animator.SetFloat("Speed", Mathf.Abs(xVelAdj) + Mathf.Abs(yVelAdj));
+
+        if (xVelAdj < 0 && aimGun.facingRight) {
+            animator.SetBool("WalkingBackwards", true);
+            //animator.SetFloat("Speed", 0);
+        }
+        if (xVelAdj > 0 && !aimGun.facingRight) {
+            animator.SetBool("WalkingBackwards", true);
+            //animator.SetFloat("Speed", 0);
+        }
+
+        if (xVelAdj < 0 && !aimGun.facingRight) {
+            animator.SetBool("WalkingBackwards", false);
+        }
+        if (xVelAdj > 0 && aimGun.facingRight) {
+            animator.SetBool("WalkingBackwards", false);
+        }
     }
 
 }

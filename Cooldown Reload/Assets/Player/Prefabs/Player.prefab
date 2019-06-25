@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 1010977340223941724}
   m_Layer: 0
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d5ab02281578b4e847d2fa7cd5f1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  facingRight: 1
   playerChar: {fileID: 1010977340606799974}
 --- !u!114 &1010977340223941725
 MonoBehaviour:
