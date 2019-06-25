@@ -6,6 +6,7 @@ TagManager:
   tags:
   - scorch
   - skott
+  - wall
   layers:
   - Default
   - TransparentFX

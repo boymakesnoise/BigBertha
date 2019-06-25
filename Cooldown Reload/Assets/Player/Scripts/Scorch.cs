@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scorch : MonoBehaviour
-{
+public class Scorch : MonoBehaviour {
     public int spawnTime;
     private SpriteRenderer spriten;
 
@@ -19,6 +18,12 @@ public class Scorch : MonoBehaviour
 
         if (spawnTime <= 0) {
             spriten.enabled = true;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.tag == "wall") {
+            Destroy(other.gameObject);
         }
     }
 }
