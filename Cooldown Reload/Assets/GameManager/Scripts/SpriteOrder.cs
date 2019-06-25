@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class SpriteOrder : MonoBehaviour
 {
+    private SpriteRenderer sprite;
+    private GameObject plupp;
+
     void Update() {
         SpriteRenderer[] renderers = FindObjectsOfType<SpriteRenderer>();
 
-        foreach(SpriteRenderer renderer in renderers) {
-            renderer.sortingOrder = (int)(renderer.transform.position.y * -100);
+        foreach (SpriteRenderer renderer in renderers) {
+
+           renderer.sortingOrder = (int)(renderer.transform.position.y * -100);
+
         }
     }
 }
