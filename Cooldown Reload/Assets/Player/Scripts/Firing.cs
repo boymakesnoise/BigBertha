@@ -18,7 +18,7 @@ public class Firing : MonoBehaviour
     }
 
     private void Update() {
-        if (Input.GetButtonDown("Fire1")) {
+        if (Input.GetAxisRaw("Fire1") > 0.5f) { 
             Shoot();
         }
     }

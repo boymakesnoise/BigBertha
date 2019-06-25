@@ -11,7 +11,7 @@ public class ReloadTimer : MonoBehaviour
     public GameObject siktet;
 
     private void Update() {
-        if (currentReloadTime > 0 && Input.GetButton("Reload1")) {
+        if (currentReloadTime > 0 && Input.GetAxisRaw("Reload1") > 0.5) {
             currentReloadTime -= Time.deltaTime;
         }
         if (currentReloadTime <= 0) {
