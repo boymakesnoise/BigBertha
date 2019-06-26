@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2380097034734532440}
   - component: {fileID: 2836981484504441402}
   - component: {fileID: 211662678}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FollowShootEnemy
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2097ca6387d3944f9febe0ab6770216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1010977340606799973, guid: bfa833b954c7e9f4b8347179e681b582, type: 3}
   speed: 100
   nextWaypointDistance: 1
   sprite: {fileID: 2519257947105306863}
@@ -130,7 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4364661154562686796}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FiringPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7818876395542988026}
   - component: {fileID: 2519257947105306863}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
