@@ -40,10 +40,7 @@ public class XYRushEnemy : MonoBehaviour
         RaycastHit2D downInfo = Physics2D.Raycast(enemyPos.position, directionDown * rayLength);
         Debug.DrawRay(enemyPos.position, directionDown * rayLength, Color.green);
         
-        if (rightInfo)
-        {
 
-        }
     }
 
 
